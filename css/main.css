@@ -1,0 +1,90 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/*
+  FONT  
+*/
+
+/*
+  FONT SIZE
+*/
+
+.h2{
+    
+}
+
+/*
+  DESIGN ELEMENTS
+*/
+body{
+    background: #FFFDFB;
+    padding: 1.5vw;
+}
+
+/*
+  LAYOUT 
+*/
+.element{
+    margin-bottom: 2vw;
+}
+/*
+  INTERACTIVE ELEMENTS
+*/
+.inText{
+    color: red;
+}
+
+.inText:hover,.inText:focus{
+    color: rgb(251,198,64);
+    text-decoration: none; 
+}
+
+/* Styling for the navigation button */
+.button-nav {
+    display: inline-block;
+    padding: 0.5rem;
+    color: rgb(251,198,64);
+    border-style: solid;
+    border-radius: 7px; 
+    border-color: rgb(251,198,64);
+    border-width: 2px;
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    margin-right: 0.5rem;
+}
+
+
+.button-nav:hover, .button-nav:focus {
+    background-color: rgb(251,198,64);
+    color: white;
+}
+
+/*
+  GRID 
+*/
+.grid {
+	display: grid;
+}
+
+.grid.add-gutters {
+    grid-column-gap: 3rem;
+	grid-row-gap: 0.25rem; 
+}
+
+.grid.two-column {
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+    grid-auto-flow: row;
+    border-top: solid;
+    border-width: 2px;
+}
+
+/*
+  FLEXBOX 
+*/
+
+/*
+  MEDIA QUERIES 
+*/
