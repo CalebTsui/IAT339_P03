@@ -10,8 +10,26 @@
   FONT SIZE
 */
 
-.h2{
-    
+h1{
+    margin-top: -1vw;
+    margin-bottom: -1vw;
+    font-size: 70px;
+    color: #086C2A;
+}
+
+h2{
+    margin-top: 1vw;
+    margin-bottom: -0.1vw;
+    font-size: 50px;
+}
+
+h3{
+    font-size: 25px; 
+}
+
+p{
+    color: #838383;
+    font-size: 18px;
 }
 
 /*
@@ -28,15 +46,36 @@ body{
 .element{
     margin-bottom: 2vw;
 }
+
+.element2 {   
+    margin-bottom: 2rem;
+    border-top: solid; 
+    border-width: 2px; 
+
+}
+
 /*
   INTERACTIVE ELEMENTS
 */
+.navLink{
+    color: #086C2A;
+}
+
+.navLink:hover,.navLink:focus{
+    cursor: pointer;
+    text-decoration: underline; 
+    
+}
+
 .inText{
-    color: red;
+    color: #086C2A;
 }
 
 .inText:hover,.inText:focus{
-    color: rgb(251,198,64);
+    display: inline;
+    padding: 0.2rem;
+    background-color: #086C2A;
+    color: #FFFDFB;
     text-decoration: none; 
 }
 
@@ -44,21 +83,45 @@ body{
 .button-nav {
     display: inline-block;
     padding: 0.5rem;
-    color: rgb(251,198,64);
-    border-style: solid;
-    border-radius: 7px; 
-    border-color: rgb(251,198,64);
-    border-width: 2px;
+    color: #086C2A;
+    border: solid 2px #086C2A;
+    border-radius: 50px; 
     text-decoration: none;
     transition-property: background-color; 
     transition-duration: 0.5s;
     margin-right: 0.5rem;
 }
 
-
 .button-nav:hover, .button-nav:focus {
-    background-color: rgb(251,198,64);
+    background-color: #086C2A;
+    border: solid 2px #086C2A;
     color: white;
+}
+
+/*
+  FORM
+*/
+
+#FormInput{
+    width: 30rem;
+    padding: 10px;
+}
+
+input{
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=tel]{
+    width: 15rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #086C2A;
+}
+
+input[type=text]:focus, input[type=text]:hover{
+    color: #272727;
+    border: 2px solid #272727;
+    transition-duration: 0.2s;
 }
 
 /*
@@ -84,6 +147,33 @@ body{
 /*
   FLEXBOX 
 */
+.projectListing{
+    margin-top: 5rem;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+  PROJECT LISTING 
+*/
+
+.productBorder{
+  /* border: solid #353535 1px; */
+  margin: 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+
+.productBorder:hover, .productBorder:focus{
+    box-shadow: 0 4px 8px 0 rgba(232, 198, 214, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.productBorder img{
+    border-radius: 8px;
+}
 
 /*
   MEDIA QUERIES 
