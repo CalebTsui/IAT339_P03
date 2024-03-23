@@ -165,6 +165,7 @@ input[type=text]:focus, input[type=text]:hover{
     height: auto;
     overflow: hidden;
     transition: border .3s ease-in-out;
+    padding: 5px;
 }
 
 .productItem:hover, .productItem:focus{
