@@ -5,6 +5,15 @@
 /*
   FONT  
 */
+@font-face{
+    font-family: "Switzer"; 
+    src: url(fonts/Switzer-Italic.otf);
+    src: url(fonts/Switzer-Medium.otf);
+    src: url(fonts/Switzer-MediumItalic.otf);
+    src: url(fonts/Switzer-Regular.otf);
+    src: url(fonts/Switzer-Semibold.otf);
+    src: url(fonts/Switzer-SemiboldItalic.otf);
+}
 
 /*
   FONT SIZE
@@ -15,21 +24,38 @@ h1{
     margin-bottom: -1vw;
     font-size: 70px;
     color: #086C2A;
+    font-family: "Switzer", sans-serif;
+    font-weight: 600;
 }
 
 h2{
     margin-top: 1vw;
     margin-bottom: -0.1vw;
     font-size: 35px;
+    font-family: "Switzer", sans-serif;
+    font-weight: 500;
 }
 
 h3{
     font-size: 25px; 
+    font-family: "Switzer", sans-serif;
+    font-weight: 500;
 }
+
+
+h4{
+    font-family: "Switzer", sans-serif;
+    font-weight: normal;
+}
+
 
 p{
     color: #838383;
     font-size: 18px;
+}
+
+header h4{
+    color: #086C2A;
 }
 
 /*
@@ -38,6 +64,8 @@ p{
 body{
     background: #FFFDFB;
     padding: 1.5vw;
+    font-family: "Switzer", sans-serif;
+    font-weight: normal;
 }
 
 /*
@@ -54,11 +82,55 @@ body{
 
 }
 
+.elementBio{
+    margin-bottom: 2rem;
+    border-top: solid; 
+    border-width: 2px;  
+    
+}
+
+/*
+  BIO PAGE 
+*/
+.elementBio h2{
+    color: #086C2A;
+    padding-left: 1px;
+    padding-right: 10px;
+    max-width: 40rem;
+    
+}
+
+.wrapper img{
+    top: 0;
+    position: relative;
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.elementBio p{
+    position: absolute
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    max-width: 40rem;
+    padding-left: 1px;
+    padding-right: 10px;
+    
+    
+}
+
+.elementBio h3{
+    font-size: 20px;
+    margin-bottom: -1vh;
+    
+}
+
 /*
   INTERACTIVE ELEMENTS
 */
 .navLink{
     color: #086C2A;
+    text-decoration: none; 
+    
 }
 
 .navLink:hover,.navLink:focus{
@@ -69,6 +141,7 @@ body{
 
 .inText{
     color: #086C2A;
+    transition: background-color 1s ease-in-out;
 }
 
 .inText:hover,.inText:focus{
@@ -77,6 +150,7 @@ body{
     background-color: #086C2A;
     color: #FFFDFB;
     text-decoration: none; 
+    transition: background-color 1s ease-in-out;
 }
 
 /* Styling for the navigation button */
@@ -154,6 +228,15 @@ input[type=text]:focus, input[type=text]:hover{
     flex-direction: row;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
 /*
   PROJECT LISTING 
 */
@@ -195,11 +278,11 @@ input[type=text]:focus, input[type=text]:hover{
 
 .textBox h3 {
     margin-top: -0.1vw;
-    
 }
 
 .textBox h2 {
     margin-bottom: 0.5vh;
+    margin-top: -0.3vh;
 }
 .productBorder{
   /* border: solid #353535 1px; */
