@@ -100,6 +100,14 @@ body{
     
 }
 
+.greenHeader{
+    color: #086C2A;
+    padding-left: 1px;
+    padding-right: 10px;
+    max-width: 40rem;
+    margin-bottom: 2vh;
+    
+}
 .wrapper img{
     top: 0;
     position: relative;
@@ -164,9 +172,29 @@ body{
     transition-property: background-color; 
     transition-duration: 0.5s;
     margin-right: 0.5rem;
+    margin-bottom: 1vh;
 }
 
 .button-nav:hover, .button-nav:focus {
+    background-color: #086C2A;
+    border: solid 2px #086C2A;
+    color: white;
+}
+
+.button-temp {
+    display: inline-block;
+    padding: 0.5rem;
+    color: #086C2A;
+    border: solid 2px #086C2A;
+    border-radius: 50px; 
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    margin-right: 0.5rem;
+    margin-bottom: 1vh;
+}
+
+.button-temp:hover, .button-temp:focus {
     background-color: #086C2A;
     border: solid 2px #086C2A;
     color: white;
@@ -288,7 +316,16 @@ input[type=text]:focus, input[type=text]:hover{
     margin-top: 3rem;
 }
 
-
+.wrapperTem{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3rem;   
+    
+}
 /*
   PROJECT LISTING 
 */
@@ -362,6 +399,13 @@ input[type=text]:focus, input[type=text]:hover{
     margin-top: 5vh;
 }
 
+.templateImg{
+    position: relative;
+    width:70%;
+    height:100%;
+    margin-top: 5vh;
+}
+
 .title h2 {
     font-size: 40px;
     font-weight: 600;
@@ -406,6 +450,19 @@ input[type=text]:focus, input[type=text]:hover{
     
 }
 
+.nameImg{
+    position: relative;
+    width: 100%;
+    height: 12rem;
+}
+
+.personaImg{
+    position: relative;
+    width: 80%;
+    height: 15rem;
+    
+}
+
 .wrapperPro h2{
     font-size: 30px;
     font-weight: 600;
@@ -413,33 +470,56 @@ input[type=text]:focus, input[type=text]:hover{
     
 }
 
+.wrapperTem h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -2vh;
+    
+}
+
+
 .marginSpace{
     margin-left: 15vw;
 }
 
 
+/*
+  TEMPLATE
+*/
 
+.wrapperTemp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
 
+.wrapperTemp img {
+    max-height: 40rem; 
+    max-width: 40rem;
+    transition: 1s ease;
+}
 
+.wrapperTemp img:hover {
+    border-radius:50%;
+    border: solid 5px #086C2A;
+    transition: 1s ease;
+}
 
+.wrapper img{
+    border: solid 5px #FFFDFB;
+    transition: 1s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.wrapper img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+    border: solid 5px #086C2A;
+}
 
 
 
