@@ -1,0 +1,593 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/*
+  FONT  
+*/
+@font-face{
+    font-family: "Switzer"; 
+    src: url(fonts/Switzer-Italic.otf);
+    src: url(fonts/Switzer-Medium.otf);
+    src: url(fonts/Switzer-MediumItalic.otf);
+    src: url(fonts/Switzer-Regular.otf);
+    src: url(fonts/Switzer-Semibold.otf);
+    src: url(fonts/Switzer-SemiboldItalic.otf);
+}
+
+/*
+  NAV BAR
+*/
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -4vh;
+
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.homeNav{
+    
+    color: #086C2A;
+    text-decoration: none;
+}
+
+
+/*
+  FONT SIZE
+*/
+
+h1{
+    margin-top: -1vw;
+    margin-bottom: -1vw;
+    font-size: 55px;
+    color: #086C2A;
+    font-family: "Switzer", sans-serif;
+    font-weight: 40;
+}
+
+h2{
+    margin-top: 1vw;
+    margin-bottom: -0.1vw;
+    font-size: 30px;
+    font-family: "Switzer", sans-serif;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 25px; 
+    font-family: "Switzer", sans-serif;
+    font-weight: 500;
+}
+
+
+h4{
+    font-family: "Switzer", sans-serif;
+    font-weight: normal;
+}
+
+
+p{
+    color: #838383;
+    font-size: 18px;
+}
+
+header h4{
+    color: #086C2A;
+}
+
+/*
+  DESIGN ELEMENTS
+*/
+body{
+    background: #FFFDFB;
+    padding: 2vw;
+    font-family: "Switzer", sans-serif;
+    font-weight: normal;
+}
+
+/*
+  LAYOUT 
+*/
+.homePage{
+    margin-top: 27vh;
+}
+
+
+.element{
+    margin-bottom: 2vw;
+}
+
+.element2 {   
+    margin-bottom: 2rem;
+    border-top: solid #CFCFCF; 
+    border-width: 2px; 
+    
+
+}
+
+.selectedWork {   
+    margin-bottom: 2rem;
+    border-top: solid #CFCFCF; 
+    border-width: 2px; 
+
+}
+
+.elementBio{
+    margin-bottom: 2rem;
+    border: solid;
+    
+}
+
+.elementBio2{
+    margin-bottom: 2rem;
+    margin-top: -1.5rem;  
+    
+}
+
+/*
+  BIO PAGE 
+*/
+.elementBio h2{
+    color: #086C2A;
+    padding-left: 1px;
+    padding-right: 10px;
+    max-width: 40rem;
+    
+}
+
+.greenHeader{
+    color: #086C2A;
+    padding-left: 1px;
+    padding-right: 10px;
+    max-width: 40rem;
+    margin-bottom: 2vh;
+    
+}
+.wrapper img{
+    top: 0;
+    position: relative;
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.elementBio p{
+    position: absolute;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    max-width: 40rem;
+    padding-left: 1px;
+    padding-right: 10px;
+    
+    
+}
+
+.elementBio h3{
+    font-size: 20px;
+    margin-bottom: -1vh;
+    
+}
+
+/*
+  HOME PAGE
+*/
+.homePage h1{
+    max-width: 65vw;
+}
+
+.spaceDownOne{
+    margin-bottom: 6vh;
+}
+
+.spaceDownTwo{
+    margin-bottom: 8vh;
+}
+
+.footerType h2{
+    margin-top: 3vh;
+    font-size: 40px;
+    color: #086C2A;
+    margin-bottom: 5vh; 
+}
+
+.footer-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -8vh;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footerLink{
+    color: #272727;
+    text-decoration: none; 
+    transition: text-decoration 0.5s ease-in-out;
+ 
+}
+
+.footerLink:hover,.footerLink:focus{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+.footer-bar{
+    font-size: 20px;
+}
+
+
+
+/*
+  INTERACTIVE ELEMENTS
+*/
+.navLink{
+    color: #086C2A;
+    text-decoration: none; 
+
+    
+}
+
+.navLink:hover,.navLink:focus{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+.navBarLink{
+    color: #086C2A;
+    text-decoration: none; 
+    background-color: #FFFDFB;
+    border-radius: 12px;
+    padding: 0.5rem;
+    transition: background-color 0.5s ease-in-out;
+
+    
+}
+
+.navBarLink:hover,.navBarLink:focus{
+    cursor: pointer;
+    background-color: #086C2A;
+    padding: 0.5rem;
+    border-radius: 12px;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    
+    
+}
+
+
+
+.inText{
+    color: #086C2A;
+    transition: background-color 1s ease-in-out;
+}
+
+.inText:hover,.inText:focus{
+    display: inline;
+    padding: 0.2rem;
+    background-color: #086C2A;
+    color: #FFFDFB;
+    text-decoration: none; 
+    transition: background-color 1s ease-in-out;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+    display: inline-block;
+    padding: 0.5rem;
+    color: #086C2A;
+    border: solid 2px #086C2A;
+    border-radius: 50px; 
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    margin-right: 0.5rem;
+    margin-bottom: 1vh;
+}
+
+.button-nav:hover, .button-nav:focus {
+    background-color: #086C2A;
+    border: solid 2px #086C2A;
+    color: white;
+}
+
+.button-temp {
+    display: inline-block;
+    padding: 0.5rem;
+    color: #086C2A;
+    border: solid 2px #086C2A;
+    border-radius: 50px; 
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    margin-right: 0.5rem;
+    margin-bottom: 1vh;
+}
+
+.button-temp:hover, .button-temp:focus {
+    background-color: #086C2A;
+    border: solid 2px #086C2A;
+    color: white;
+}
+
+/*
+  FORM
+*/
+
+#FormInput{
+    width: 30rem;
+    padding: 10px;
+}
+
+input{
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=tel]{
+    width: 15rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #086C2A;
+}
+
+input[type=text]:focus, input[type=text]:hover{
+    color: #272727;
+    border: 2px solid #272727;
+    transition-duration: 0.2s;
+}
+
+/*
+  GRID 
+*/
+.grid {
+	display: grid;
+}
+
+.grid.add-gutters {
+    grid-column-gap: 3rem;
+	grid-row-gap: 0.25rem; 
+    border: solid;
+}
+
+.grid.two-column {
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+    grid-auto-flow: row;
+    border-top: solid #CFCFCF;
+    border-width: 2px;
+}
+
+.boldText{
+    color: #272727;
+    font-weight: 600;
+}
+
+
+
+/*
+  FLEXBOX 
+*/
+.projectListing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.wrapperTem{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3rem;   
+    
+}
+/*
+  PROJECT LISTING 
+*/
+
+.productItem{
+    position: relative;
+    border: 2px solid #FFFDFB;
+    max-width: 700px;
+    height: auto;
+    overflow: hidden;
+    transition: border .3s ease-in-out;
+    padding: 5px;
+}
+
+.productItem:hover, .productItem:focus{
+    border: 2px solid #086C2A;
+    background-color: rgba(249, 249, 249, 0.8);
+    cursor:pointer;
+}
+
+.productItem img:hover{
+    transform: scale(1.1);
+    transition:.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color .3s ease-in-out;
+}
+
+.productItem img {
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    transition:.3s ease-in-out;
+}
+
+.textBox h3 {
+    margin-top: -0.1vw;
+}
+
+.textBox h2 {
+    margin-bottom: 0.5vh;
+    margin-top: -0.3vh;
+}
+.productBorder{
+  /* border: solid #353535 1px; */
+  margin: 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+
+.productBorder:hover, .productBorder:focus{
+    box-shadow: 0 4px 8px 0 rgba(232, 198, 214, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.productBorder img{
+    border-radius: 8px;
+}
+
+/*
+  PROCESS ANALYSIS
+*/
+
+.wrapperPro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    row-gap: 20vw;
+    
+}
+
+.wrapperPro p{
+    max-width: 40rem;
+    
+}
+
+.elementBio2 h2{
+    color: #086C2A;
+    max-width: 40rem;
+
+}
+
+.element2 h2{
+    color: #086C2A;
+    max-width: 40rem;
+
+    
+}
+
+.processImg{
+    position: relative;
+    width:100%;
+    height:auto;
+    margin-top: 5vh;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 100%;
+}
+
+.title h3{
+    margin-top: -0.1vh;
+    font-weight: 400;
+    color: #086C2A;
+}
+
+
+
+
+/*
+  TEMPLATE
+*/
+
+.templateImg{
+    position: relative;
+    width:70%;
+    height:100%;
+    margin-top: 5vh;
+}
+
+.wrapperTemp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.wrapperTemp img {
+    max-height: 40rem; 
+    max-width: 40rem;
+    transition: 1s ease;
+}
+
+.wrapperTemp img:hover {
+    border-radius:50%;
+    border: solid 5px #086C2A;
+    transition: 1s ease;
+}
+
+.wrapper img{
+    border: solid 5px #FFFDFB;
+    transition: 1s ease;
+}
+
+.wrapper img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+    border: solid 5px #086C2A;
+}
+
+.navBarLink{
+    
+}
+
+
+
+
+
+
+
+/*
+  MEDIA QUERIES 
+*/
+
+@media (width <= 800px){
+
+
+}

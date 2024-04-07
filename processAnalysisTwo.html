@@ -13,20 +13,24 @@
     </head>
     
     <header>
-        <h1>IAT339-P03</h1>
-        <h2>Process Analysis Two</h2>
-        <div class="element">
-            <h4><a class="navLink" href="styleGuide.html">Style Guide</a></h4>
-            <h4><a class="navLink" href="processAnalysisOne.html">Process Analysis 1</a></h4>
-            <h4><a class="navLink" href="processAnalysisTwo.html">Process Analysis 2</a></h4>
-            <h4><a class="navLink" href="bio.html">Bio</a></h4>
-            <h4><a class="navLink" href="templates.html">Templates</a></h4>
-        </div>
+        <nav class="nav-container">
+            <h3><a class="homeNav" href="index.html">Caleb Tsui</a></h3>
+            
+            <div class="nav-menu">
+                <h4><a class="navBarLink" href="processAnalysisOne.html">Works</a></h4>
+                <h4><a class="navBarLink" href="processAnalysisTwo.html">Sandbox</a></h4>
+                <h4><a class="navBarLink" href="bio.html">About</a></h4>
+                <h4><a class="navBarLink" href="bio.html">Style Guide</a></h4>
+                <h4><a class="navBarLink" href="templates.html">Resumé</a></h4>
+            </div>
+            
+        </nav>
         
     </header>
     
     <body>
-        <section class="elementBio">
+        
+        <section class="elementBio2">
             <div> 
                 <img class="processImg" src="img/mac.jpg" alt="Strange Sounds from Beyond Expressive Microsite">
             
@@ -36,153 +40,60 @@
                 <h3>Improved accessibility and proposed solutions for fashion e-commerce</h3>
             </div>
             
-            <div class="wrapperPro">
+            <div class="grid two-column add-gutters">
                 <div>
-                    <h2>Overview of the Project</h2>
+                    <h2>Overview</h2>
                 </div>
                 
-                <div class="marginSpace">
-                    <p>The project was developed for IAT 201: HCI and Cognition. The project was centred around colour blindness, which the team extensively researched through the lens of relevant precedents. This culminated in a comprehensive case study paper and prototypes illustrating the proposed solutions.</p>
+                <div> 
+                    <p>The project was centred around colour blindness, which the team extensively researched through the lens of relevant precedents. This culminated in a comprehensive case study paper and prototypes illustrating the proposed solutions.</p>
                     <p class="boldText">Contributions:</p>
                     <p>UX/UI Design, User Research, Prototype, Interaction Design</p>
                     <p class="boldText">Team:</p>
                     <p>Jae Eun Kim, Valeriya Ten, Andrea So</p>
                     <p class="boldText">Duration:</p>
-                    <p>Spring 2023, 3 Week Academic Project</p>
+                    <p>Spring 2023, 3-Week Academic Project</p>
                 </div>
+                
             </div>
             
         </section>
         
-        <section class="elementBio">
-            
-            <div class="wrapperPro">
-                <div>
+        <section class="element2"></section>
+        
+        <h2 class="centerQuestion">“How can fashion e-commerce sites display colour variations of a product more clearly and self-descriptive for colour-blind people?”</h2>
+        
+        <section class="colourGreen">
+            <div> 
+                <div class="grid two-column add-gutters">
                     <h2>Identify the Problem</h2>
+                    
+                    <div>
+                        <p>Approximately 8% of men and 0.5% of women have a colour perception deficit (Johnson, 2020). Many e-commerce websites lack clear labels indicating their products’ colour variation.</p>
+                        
+                        <p>This poses a challenge for colour-blind people as they cannot distinguish between all options properly. In addition to the posited accessibility issue within e-commerce websites, we found that some websites use confusing names for their products without providing any additional information.</p>
+                    </div>
+                    
                 </div>
                 
-                <div class="marginSpace">
-                    <p>Approximately 8% of men and 0.5% of women have a colour perception deficit (Johnson, 2020). Many e-commerce websites lack clear labels indicating their products’ colour variation.</p>
-                    
-                    <p>This poses a challenge for colour-blind people as they cannot distinguish between all options properly. In addition to the posited accessibility issue within e-commerce websites, we found that some websites use confusing names for their products without providing any additional information.</p>
-                </div>
-            </div>
-            
-            <div class="wrapperPro">
-                <div>
+                <div class="grid two-column add-gutters">
                     <h2>Problem Framing</h2>
+                    <div>
+                        <img class="processImg" src="img/shoes.jpg" alt="Strange Sounds from Beyond Expressive Microsite">
+                        
+                    </div>
+                    
                 </div>
                 
-                <div class="marginSpace">
-                    <img class="clientImg" src="img/shoes.png" alt="">
-                    <p class="boldText">If a product has only one unique design, is the product’s colour described and labelled properly on the websites?</p>
-                    <p>This poses a challenge for colour-blind people as they cannot distinguish between all options properly. In addition to the posited accessibility issue within e-commerce websites, we found that some websites use confusing names for their products without providing any additional information.</p>
-                    
-                    <img class="clientImg" src="img/pants.png" alt="">
-                    <p class="boldText">If one clothing product has multiple colours, does its website display all colours within the same shade in a way that people can intuitively distinguish?</p>
-                    <p>This question was formed while browsing Aritzia’s webpage showing Cozy Fleece Mega Cargo Sweatpant (LINK). It was difficult to distinguish between the light colours in grey tones because our visual system is not designed to detect absolute brightness levels.</p>
-                    
-                    <img class="clientImg" src="img/lipstick.png" alt="">
-                    <p class="boldText">If a product has colour variations and ambiguous names, do e-commerce websites provide additional colour descriptions?</p>
-                    <p>The question was drawn from the Maybelline Super Stay Lipcolor (LINK). The colours are not descriptive as the names refer to human personalities, such as “cheeky”. We identified a problem as the website only supplies the unique product name, but lacks the actual colour descriptors.</p>
-                    
-                    <img class="clientImg" src="img/match.png" alt="">
-                    <p class="boldText">How can fashion e-commerce companies better present colour-matching choices for the entire outfit for colour-blind people?</p>
-                    <p>This question was derived from Oak and Fort’s Flared Cropped Twill Pant (LINK). Although this page is dedicated to pants, the models have multiple pieces of clothing that complement the pants. However, Colour-blind people lack the visual perception to learn about colour choices.</p>
-                    
-                    <img class="clientImg" src="img/material.jpg" alt="">
-                    <p class="boldText">How can fashion e-commerce companies better present the information about textures and patterns of fashion items for colour-blind people?</p>
-                    <p>To continue exploring the topic, I have proposed another issue after the completion of the project. This question was derived from Oak and Fort’s Flared Cropped Twill Pant (LINK). The website offers the option to zoom into the product, but the information is minimal. This can pose a problem for colour-blind individuals in determining whether an item will work for them or not.</p>
-                    
-                </div>
-            </div>
-            
-            <div class="wrapperPro">
-                <div>
-                    <h2>Design Objective</h2>
-                </div>
-                
-                <div class="marginSpace">
-                    <p>With the proposed user challenges, the team was trying promote an inclusive e-commerce experience and expand the target market to colour-blind people as adding certain accessibility features can have a tangible advantage - a broader user reach in general. Simply ignoring accessibility can not only put the colour-blind population at a disadvantage but also harm online retail companies in revenue and impact.</p>
-                    
-                </div>
-            </div>
-            
-            <div class="wrapperPro">
-                <div>
-                    <h2>Proposed Solutions</h2>
-                </div>
-                
-                <div class="marginSpace">
-                    <p>To solve the issues, the team brainstormed various potential solutions. After receiving feedback from a classmate with colour blindness, we settled on the following solutions, which I prototyped, to visualize the team’s ideas.</p>
-                    
-                    <video class="vidImg" controls><source src="img/shoes.mov" type="video/mp4">Your browser does not support HTML video.</video>
-                     <p class="boldText">Visual Indication for the Hovered Colour Label</p>
-                    <p>Taking reference from the Adidas Adizero website display, the colour-blind population would have difficulty identifying which part of the shoe each colour corresponds to. Therefore, the idea of colour labels that mark a direct connection to the product was implemented.</p>
-                    
-                    <video class="vidImg" controls><source src="img/label.mov" type="video/mp4">Your browser does not support HTML video.</video>
-                     <p class="boldText">Visual Indication for the Hovered Item Label</p>
-                    <p>Took reference from Oak and Fort’s Twill Pant. Although the website gives imagery with styling options for the pants, there was no description of the colour of those items. Therefore, an indication of the colours of not only the main item but also the recommended items was implemented.</p>
-                    
-                    <video class="vidImg" controls><source src="img/pants.mov" type="video/mp4">Your browser does not support HTML video.</video>
-                     <p class="boldText">Implementation of a Comparison Pop-up Window</p>
-                    <p>Taking reference from Aritzia’s Cozy Fleece Mega Cargo Sweatpant. It was difficult to distinguish between the colours as we could only use the small colour patches. Therefore, integration of a comparison system, where product photos in similar shades can be compared at a glance, was implemented.</p>
-                    
-                    <img class="nameImg" src="img/names.jpg" alt="">
-                    <p class="boldText">Clear Self-descriptive Colour Names</p>
-                    <p>The example can be found at Maybelline’s Super Stay lipcolor website display, where it provides a list of ambiguous names, such as “cheeky”, “royal”, or “witty”. In response to this, It would be beneficial to include additional colour information.</p>
-                    
-                    <video class="vidImg" controls><source src="img/materials.mov" type="video/mp4">Your browser does not support HTML video.</video>
-                    <p class="boldText">Zoomed-in Fabric Image with Detailed Description</p>
-                    <p>Took reference from Oak and Fort’s Twill Pant. To address this issue, fashion e-commerce websites can provide more detailed information about the texture and pattern of their products, such as close-up photos with detailed written descriptions.</p>
-                    
-                    
-                </div>
-            </div>
-            
-            <div class="wrapperPro">
-                <div>
-                    <h2>Explain and Effect</h2>
-                </div>
-                
-                <div class="marginSpace">
-                    <p>Currently, colour blindness affects around 8% of the world’s population (Johnson, 2020). We identified that most e-commerce websites are still poorly designed for people with disabilities. When it comes to online shopping, this condition can make it extremely hard to distinguish between product colour options and combinations.</p>
-                    
-                    <p>Jeff Johnson (2020) states that it is important to run any design through a colour-blindness simulator to identify any weak spots that could impact colour-blind people’s ability to navigate smoothly. However, we found that a colour-blindness simulator is not an ideal solution for e-commerce websites since physical products sold online display any colour combination depending on its product design and brand’s preference.</p>
-                    
-                    <p>Therefore, we hoped to present a solution that could address such an issue properly. Our starting point was from the “Guidelines for using Colour” for interactive systems, which suggests not relying on colour alone to interact with the user but using colour in combination with other cues (Johnson, 2020).</p>
-
-                </div>
-
-            </div>
-            
-            <div class="wrapperPro">
-                <div>
-                    <h2>User Persona and Scenerio</h2>
-                </div>
-                
-                <div class="marginSpace">
-                    <img class="clientImg" src="img/personaOne.jpg" alt="">
-                    <p>To better contextualize the proposed issues, I developed two user personas that represent the potential that colour-blind individual face when online shopping. In addition, examples provide a personal connection between the readers and the proposed issues.</p>
-                    <img class="clientImg" src="img/personaTwo.jpg" alt="">
-                    
-                </div>
                 
             </div>
             
-            <div class="wrapperPro">
-                <div>
-                    <h2>Lesson Learned</h2>
-                </div>
-                
-                <div class="marginSpace">
-                    <p class="boldText">Design through Research</p>
-                    <p>After we were given a topic, the team conducted in-depth research on the experience of the colour-blinded population through academic articles and user interviews. The collected data served as the foundation for creating prototypes that articulate proposed solutions, aiming to enhance the shopping experience for the population with colour blindness.</p>
-                    
-                </div>
-            </div>
-
         </section>
+        
+        
+        
+    
+        
         
     </body>
 </html>
