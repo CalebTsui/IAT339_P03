@@ -15,6 +15,12 @@
     src: url(fonts/Switzer-SemiboldItalic.otf);
 }
 
+@font-face{
+    font-family: "DM-Serif-Text"; 
+    src: url(fonts/DMSerifText-Regular.ttf);
+    src: url(fonts/DMSerifText-Italic.ttf);
+}
+
 /*
   NAV BAR
 */
@@ -56,12 +62,32 @@ h1{
     font-weight: 400;
 }
 
+.h1Serif{
+    margin-top: -1vw;
+    margin-bottom: -1vw;
+    font-size: 55px;
+    color: #086C2A;
+    font-family: "DM-Serif-Text", serif;
+    font-weight: 550;
+    font-style: italic;
+    
+}
+
 h2{
     margin-top: 1vw;
     margin-bottom: -0.1vw;
     font-size: 30px;
     font-family: "Switzer", sans-serif;
     font-weight: 500;
+}
+
+.h2Serif{
+    margin-top: 1vw;
+    margin-bottom: -0.1vw;
+    font-size: 45px;
+    font-family: "DM-Serif-Text", serif;
+    font-weight: 550;
+    font-style: italic;
 }
 
 h3{
@@ -81,6 +107,7 @@ p{
     color: #838383;
     font-size: 18px;
     font-weight: normal;
+    line-height: 27px;
     
 }
 
@@ -582,6 +609,27 @@ input[type=text]:focus, input[type=text]:hover{
     transform: rotateZ(-10deg);
     transition: 1s ease;
     border: solid 5px #086C2A;
+}
+
+.wrapperTemp h2{
+    margin-top: 1vw;
+    margin-bottom: -0.1vw;
+    font-size:40px;
+    font-family: "Switzer", sans-serif;
+    font-weight: 500;
+    color: #272727;
+     
+}
+
+.h2Temp{
+    margin-top: 1vw;
+    margin-bottom: -0.1vw;
+    font-size:40px;
+    font-family: "DM-Serif-Text", serif;
+    font-weight: 550;
+    font-style: italic;
+    color: #086C2A;
+     
 }
 
 /*
