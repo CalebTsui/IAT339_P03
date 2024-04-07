@@ -126,7 +126,6 @@ body{
 
 .elementBio{
     margin-bottom: 2rem;
-    border: solid;
     
 }
 
@@ -163,7 +162,6 @@ body{
 }
 
 .elementBio p{
-    position: absolute;
     margin-top: 5vh;
     margin-bottom: 3vh;
     max-width: 40rem;
@@ -406,15 +404,19 @@ input[type=text]:focus, input[type=text]:hover{
 }
 
 .productItem:hover, .productItem:focus{
-    border: 2px solid #086C2A;
-    background-color: rgba(249, 249, 249, 0.8);
+    border: solid 3px #FFFDFB;
+    background-color: #FFFDFB;
     cursor:pointer;
 }
 
 .productItem img:hover{
-    transform: scale(1.1);
+    border: solid 3px #086C2A;
+    transform: scale(0.97);
     transition:.3s ease-in-out;
+    
+    
 }
+
 
 .overlay {
     position: absolute;
@@ -463,6 +465,8 @@ input[type=text]:focus, input[type=text]:hover{
 }
 
 .grid.add-gutters {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     grid-column-gap: 1rem;
 	grid-row-gap: 0.25rem; 
 }
@@ -494,6 +498,7 @@ input[type=text]:focus, input[type=text]:hover{
 .element2 h2{
     color: #086C2A;
     max-width: 40rem;
+    
  
 }
 
@@ -548,16 +553,15 @@ input[type=text]:focus, input[type=text]:hover{
 
 .wrapperTemp {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    margin-top: 3rem;
+    justify-content: space-around;
+    
 }
 
 .wrapperTemp img {
     max-height: 40rem; 
-    max-width: 40rem;
+    max-width: 100%;
     transition: 1s ease;
 }
 
@@ -580,21 +584,23 @@ input[type=text]:focus, input[type=text]:hover{
     border: solid 5px #086C2A;
 }
 
-.navBarLink{
-    
-}
-
-
-
-
-
-
-
 /*
   MEDIA QUERIES 
 */
 
-@media (width <= 800px){
+@media screen and (width < 60rem){
+    .grid.two-column{
+        grid-template-columns: 1fr;
+		grid-template-rows: auto;
+        grid-auto-flow: row;
 
-
+    }
+    
+    .wrapperTemp{
+        display: block;
+        align-items: center;
+        
+        
+    }
+    
 }
