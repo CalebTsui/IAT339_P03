@@ -298,9 +298,6 @@ body{
     
     
 }
-
-
-
 .inText{
     color: #086C2A;
     transition: background-color 1s ease-in-out;
@@ -457,6 +454,7 @@ input[type=text]:focus, input[type=text]:hover{
     top: 0;
     max-width: 100%;
     height: 100%;
+    
     transition:.3s ease-in-out;
 }
 
@@ -530,6 +528,7 @@ input[type=text]:focus, input[type=text]:hover{
 }
 
 .processImg{
+    overflow: hidden;
     position: relative;
     width:100%;
     height:auto;
@@ -537,6 +536,7 @@ input[type=text]:focus, input[type=text]:hover{
 }
 
 .vidImg{
+    overflow: hidden;
     position: relative;
     width:100%;
     height:auto;
@@ -572,6 +572,7 @@ input[type=text]:focus, input[type=text]:hover{
 */
 
 .templateImg{
+    overflow: hidden;
     position: relative;
     width:70%;
     height:100%;
@@ -587,6 +588,7 @@ input[type=text]:focus, input[type=text]:hover{
 }
 
 .wrapperTemp img {
+    overflow: hidden;
     max-height: 40rem; 
     max-width: 100%;
     transition: 1s ease;
@@ -632,6 +634,7 @@ input[type=text]:focus, input[type=text]:hover{
      
 }
 
+
 /*
   MEDIA QUERIES 
 */
@@ -649,6 +652,24 @@ input[type=text]:focus, input[type=text]:hover{
         align-items: center;
         
         
+    }
+    
+    .footer-bar{
+        display: block; 
+        
+    }
+    
+    
+    
+}
+
+@media screen and (width < 92rem){
+    .projectListing{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: column;
     }
     
 }
