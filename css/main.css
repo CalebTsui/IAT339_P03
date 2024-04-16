@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
   HAMBURGER MENU 
 */
@@ -784,7 +788,7 @@ input[type=text]:focus, input[type=text]:hover{
     }
     
     h2{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     h3{
