@@ -4,6 +4,7 @@
 $maincolor: #086C2A;
 $secondarycolor: #272727;
 $maxwidth: 40rem;
+$thirdcolor: #FFFDFB;
 
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -20,23 +21,6 @@ html {
   HAMBURGER MENU 
 */
 
-/*
-  CURSOR
-*/
-
-.cursor {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  left: 50%;
-  margin: -10px 0 0 -10px;
-  border: 2px solid $maincolor;
-  border-radius: 100px;
-  backface-visibility: hidden;
-  transition: transform 0.3s ease-out;
-    z-index: -1;
-}
 /*
   FONT  
 */
@@ -60,6 +44,12 @@ html {
   NAV BAR
 */
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -79,7 +69,6 @@ html {
 }
 
 .homeNav{
-    
     color: $maincolor;
     text-decoration: none;
 }
@@ -155,7 +144,7 @@ header h4{
   DESIGN ELEMENTS
 */
 body{
-    background: #FFFDFB;
+    background: $thirdcolor;
     padding: 2vw;
     font-family: "Switzer", sans-serif;
     font-weight: normal;
@@ -316,7 +305,7 @@ body{
 .navBarLink{
     color: $maincolor;
     text-decoration: none; 
-    background-color: #FFFDFB;
+    background-color: $thirdcolor;
     border-radius: 12px;
     padding: 0.5rem;
     transition: background-color 0.5s ease-in-out;
@@ -343,7 +332,7 @@ body{
     display: inline;
     padding: 0.2rem;
     background-color: $maincolor;
-    color: #FFFDFB;
+    color: $thirdcolor;
     text-decoration: none; 
     transition: background-color 1s ease-in-out;
 }
@@ -475,7 +464,7 @@ figure {
     max-height: 400px;
 	margin: 0;
 	padding: 0;
-	background: #fff;
+	background: $thirdcolor;
 	overflow: hidden;
 }
 
@@ -608,9 +597,6 @@ figure {
     margin-bottom: 7vh;
 }
 
-
-
-
 /*
   TEMPLATE
 */
@@ -645,7 +631,7 @@ figure {
 }
 
 .wrapper img{
-    border: solid 5px #FFFDFB;
+    border: solid 5px $thirdcolor;
     transition: 1s ease;
 }
 
@@ -676,6 +662,24 @@ figure {
     font-style: italic;
     color: $maincolor;
      
+}
+
+/*
+  CURSOR
+*/
+
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  border: 2px solid $maincolor;
+  border-radius: 100px;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease-out;
+    z-index: -1;
 }
 
 /*
