@@ -13,19 +13,46 @@
     </head>
     
     <header>
-        <nav class="nav-container">
-            <h3><a class="homeNav" href="index.html">Caleb Tsui</a></h3>
-            
-            <div class="nav-menu">
-                <h4><a class="navBarLink" href="index.html">Works</a></h4>
-                <h4><a class="navBarLink" href="bio.html">About</a></h4>
-                <h4><a class="navBarLink" href="styleGuide.html">Style Guide</a></h4>
-                <h4><a class="navBarLink" href="https://drive.google.com/file/d/1tKYmLepLIXsuTlH_N9Q9GVMyMHphQJDn/view?usp=sharing">Resumé</a></h4>
-            </div>
-            
+        <div><h3><a class="homeNav" href="index.html">Caleb Tsui</a></h3></div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <h4><a href="#works" class="active">Works</a></h4> 
+                </li>
+                
+                <li>
+                    <h4><a href="styleGuide.html" class="active">Style Guides</a></h4> 
+                </li>
+                
+                <li>
+                    <h4><a href="bio.html" class="active">About</a></h4>
+                </li>
+                
+                <li>
+                    <h4><a href="https://drive.google.com/file/d/1tKYmLepLIXsuTlH_N9Q9GVMyMHphQJDn/view?usp=sharing" class="active">Resumé</a></h4>
+                </li>
+            </ul>
         </nav>
         
     </header>
+    
+    <script>
+        console.log("JavaScript for Hamburger menu is running.");
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            
+            navBar = document.querySelector(".nav-bar"); 
+            navBar.classList.toggle("active");
+
+        }
+    </script>
     
     <body>
         <section>

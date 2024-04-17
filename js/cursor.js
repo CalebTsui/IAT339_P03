@@ -1,5 +1,3 @@
-// http://ahrengot.com/tutorials/greensock-javascript-animation
-
 var $cursor = $('.cursor');
 
 function moveCursor(e) {
