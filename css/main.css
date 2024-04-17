@@ -3,7 +3,10 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    cursor: none;
+
+    
 }
 
 /*
@@ -13,78 +16,22 @@ html {
 /*
   CURSOR
 */
-.cursor{
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-color: #086C2A;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
+
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  border: 2px solid #086C2A;
+  border-radius: 100px;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease-out;
+    z-index: -1;
 }
 
-/*
-  IMAGE ANIMATION
-*/
 
-.block[data-fx="2"] a::after,
-a.content__text-link[data-fx="2"]::after{
-    content: '';
-	z-index: -1;
-	width: 100%;
-	bottom: 0.25rem;
-	left: 0;
-	position: absolute;
-	height: 2px;
-	background: currentColor;
-	transform: scale3d(0,1,1);
-	transform-origin: 0% 50%;
-	transition: transform 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
-}
-
-a.content__text-link[data-fx="2"]::after{
-    bottom: 0;
-}
-
-.block[data-fx="2"] a:hover::after,
-a.content__text-link[data-fx="2"]:hover::after{
-	transform: scale3d(1,1,1)
-}
-
-.hover-reveal {
-	position: fixed;
-	width: 290px;
-	height: 190px;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	opacity: 0;
-}
-
-.hover-reveal__inner,
-.hover-reveal__img {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-.hover-reveal__deco {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #181314;
-}
-
-.hover-reveal__img {
-	background-size: cover;
-	background-position: 50% 50%;
-}
-
-.block-link{
-    cursor: pointer;
-}
 
 
 /*
@@ -757,6 +704,73 @@ figure {
     
     
 }
+
+/*
+  IMAGE ANIMATION
+*/
+
+.block[data-fx="2"] a::after,
+a.content__text-link[data-fx="2"]::after{
+    content: '';
+	z-index: -1;
+	width: 100%;
+	bottom: 0.25rem;
+	left: 0;
+	position: absolute;
+	height: 2px;
+	background: currentColor;
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+	transition: transform 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+a.content__text-link[data-fx="2"]::after{
+    bottom: 0;
+}
+
+.block[data-fx="2"] a:hover::after,
+a.content__text-link[data-fx="2"]:hover::after{
+	transform: scale3d(1,1,1)
+}
+
+.hover-reveal {
+	position: fixed;
+	width: 290px;
+	height: 190px;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.hover-reveal__inner,
+.hover-reveal__img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.hover-reveal__deco {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #181314;
+}
+
+.hover-reveal__img {
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.block-link{
+    cursor: pointer;
+}
+
+/*
+  MEDIA QUERIES
+*/
 
 @media screen and (width < 92rem){
     .projectListing{
