@@ -112,7 +112,7 @@ header {
   }
   .nav-bar.active {
     height: 280px;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 0px 0px 15px 15px;
   }
   .nav-bar ul li a {
     color: #FFFDFB;
@@ -216,6 +216,10 @@ body {
 /*
   LAYOUT 
 */
+.citePage {
+  margin-bottom: 3rem;
+}
+
 .homePage {
   margin-top: 27vh;
 }
@@ -388,7 +392,7 @@ body {
   background-color: #086C2A;
   padding: 0.5rem;
   border-radius: 12px;
-  color: white;
+  color: #FFFDFB;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
@@ -428,7 +432,7 @@ body {
 .button-nav:hover, .button-nav:focus {
   background-color: #086C2A;
   border: solid 2px #086C2A;
-  color: white;
+  color: #FFFDFB;
 }
 
 .button-temp {
@@ -449,7 +453,7 @@ body {
 .button-temp:hover, .button-temp:focus {
   background-color: #086C2A;
   border: solid 2px #086C2A;
-  color: white;
+  color: #FFFDFB;
 }
 
 .bioText-link {

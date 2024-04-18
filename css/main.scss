@@ -5,6 +5,7 @@ $maincolor: #086C2A;
 $secondarycolor: #272727;
 $maxwidth: 40rem;
 $thirdcolor: #FFFDFB;
+$borderone: solid 2px #086C2A;
 
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -119,7 +120,7 @@ header{
     
     .nav-bar.active{
         height: 280px;
-        border-radius: 15px 15px 15px 15px;
+        border-radius: 0px 0px 15px 15px;
         
     }
 
@@ -233,6 +234,10 @@ body{
 /*
   LAYOUT 
 */
+.citePage{
+    margin-bottom: 3rem;
+}
+
 .homePage{
     margin-top: 27vh;
 }
@@ -398,7 +403,7 @@ body{
     background-color: $maincolor;
     padding: 0.5rem;
     border-radius: 12px;
-    color: white;
+    color: $thirdcolor;
     transition: background-color 0.3s ease-in-out;
     
     
@@ -422,7 +427,7 @@ body{
     display: inline-block;
     padding: 0.5rem;
     color: $maincolor;
-    border: solid 2px $maincolor;
+    border: $borderone;
     border-radius: 50px; 
     text-decoration: none;
     transition-property: background-color; 
@@ -433,15 +438,15 @@ body{
 
 .button-nav:hover, .button-nav:focus {
     background-color: $maincolor;
-    border: solid 2px $maincolor;
-    color: white;
+    border: $borderone;
+    color: $thirdcolor;
 }
 
 .button-temp {
     display: inline-block;
     padding: 0.5rem;
     color: $maincolor;
-    border: solid 2px $maincolor;
+    border: $borderone;
     border-radius: 50px; 
     text-decoration: none;
     transition-property: background-color; 
@@ -453,7 +458,7 @@ body{
 .button-temp:hover, .button-temp:focus {
     background-color: $maincolor;
     border: solid 2px $maincolor;
-    color: white;
+    color: $thirdcolor;
 }
 
 .bioText-link{
@@ -852,7 +857,7 @@ a.content__text-link[data-fx="2"]:hover::after{
     
     .cursor{
         display: none
-    }
+    } 
  
 }
 
